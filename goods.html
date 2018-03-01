@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/transport.css"/>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <header class="clearfix">
+        <div class="slogan fl"><a href="index.html"><img src="images/header_logo.png" alt=""/></a></div>
+        <div class="app_download fr"><a href="javascript:;" title="手机app下载"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--搜索-->
+    <div class="search clearfix">
+        <input class="search_ip fl" type="text" placeholder="请输入你想比价的商品"/>
+        <input class="search_btn fr" type="button" value="搜索"/>
+    </div>
+    <!--比价查询-全部分类-商品-->
+    <div class="parity-all">
+        <div class="title">
+            <a href="javascript:;">首页></a>
+            <a href="javascript:;">全部分类></a>
+            <a href="javascript:;">大电视</a>
+        </div>
+        <div class="goods_content">
+            <div class="goods-item">
+                <script type="text/template" id="tmp_goods">
+                    <div class="name">{{list.productName }}</div>
+                    <div class="goods_img">
+                        {{@list.productImg}}
+                    </div>
+                    <!--<div class="goods_collection">-->
+                        <!--<img src="images/sc.jpg" alt=""/>-->
+                    <!--</div>-->
+                    <div class="by-btn clearfix">
+                        <div class="parityitn fl">比价购买</div>
+                        <div class="goods_parameter fl">产品参数</div>
+                        <div class="goods_evaluate fl">评价(2322)</div>
+                    </div>
+                    <div class="bying">
+                        <div class="info clearfix">
+                            <!--<div class="from">-->
+                                {{@list.bjShop}}
+                            <!--</div>-->
+                            <!--<div class="num_by">-->
+                                <!--<span class="by_btn">￥1999.00</span>-->
+                                <!--<span class="numb">去购买 </span>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="other">
+                        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+                    </div>
+                </script>
+
+            </div>
+            <div class="netizen_evaluation">
+                <div class="title">网友评价</div>
+                <div class="evaluation_list">
+                    <ul>
+                        <script type="text/template" id="tmp_goods_evaluate">
+                            {{ each list v}}
+                        <li>
+                            <div class="top clearfix">
+                                <div class="nickname">{{v.comName}}</div>
+                                <div class="info">
+                                    <div class="time">{{v.comTime}}</div>
+                                    <div class="from">{{v.comFrom}}</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                {{v.comContent}}
+                            </div>
+                        </li>
+                            {{ /each }}
+                        </script>
+
+                    </ul>
+                    <div class="more"><a href="javascript:;">查看更多评价</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部导航-->
+    <div class="btn-nav clearfix">
+        <a href="#" class="login">登录</a>
+        <a href="#" class="register">注册</a>
+        <a href="#" class="to_top">
+            <i></i>
+            回到顶部
+        </a>
+    </div>
+    <!-- 尾部-->
+    <footer>
+        <p>
+            <a href="javascript:;">手机APP下载</a>
+            <a href="index.html">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script src="lib/jquery/jquery.min.js/"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/comment/Route.js"></script>
+<script src="js/comment/tools.js"></script>
+<script src="js/goods.js"></script>
+</body>
+</html>

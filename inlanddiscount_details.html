@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>国内折扣—商品详情</title>
+    <link rel="stylesheet" href="css/transport.css"/>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <header class="clearfix">
+        <!--<div class="back fl"><a href="index.html"><img src="images/header_logo.png" alt=""/></a></div>-->
+        <div class="back_icon fl">
+            <a href="index.html"></a>
+        </div>
+        <h2 class="fl">国内折扣</h2>
+        <div class="app_download fr"><a href="javascript:;" title="手机app下载"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--单个商品详情-->
+    <div class="thrifty_details">
+        <div class="content clearfix">
+            <script type="text/template" id="inland_discount_details">
+            <h3 class="goods_tit">{{list.productName}}</h3>
+            <div class="info">
+                <span class="form">{{list.productFrom}}</span>
+                <span class="time">{{list.productTime}}</span>
+                <span class="other">{{list.productTips}}</span>
+            </div>
+            <div class="img_small fr">
+               {{@list.productImg}}
+            </div>
+            <div class="con_info">
+                <p>{{list.productInfo}}</p>
+                <p></p>
+                <p class="img_big" style="margin: 80px auto">
+                    {{@list.productImg}}
+                </p>
+                <!--<div class="city_volume">{{@list.productCity}}</div>-->
+                <div class="btn_orange golikn">
+                    <a href="#">前往购买</a>
+                </div>
+            </div>
+            <div class="ewm">
+                <img src="images/mmbweixin2.png" alt=""/>
+            </div>
+            <div class="evaluate">
+                <div class="list">
+                    {{@list.productComment}}
+                </div>
+            </div>
+            </script>
+        </div>
+
+    </div>
+    <!--底部导航-->
+    <div class="btn-nav clearfix">
+        <a href="#" class="login">登录</a>
+        <a href="#" class="register">注册</a>
+        <a href="#" class="to_top">
+            <i></i>
+            回到顶部
+        </a>
+    </div>
+    <!-- 尾部-->
+    <footer>
+        <p>
+            <a href="javascript:;">手机APP下载</a>
+            <a href="index.html">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script src="lib/jquery/jquery.min.js/"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/comment/Route.js"></script>
+<script src="js/comment/tools.js"></script>
+<script src="js/inlanddiscount_details.js"></script>
+</body>
+</html>

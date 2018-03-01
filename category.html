@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>比价列表</title>
+    <link rel="stylesheet" href="css/transport.css"/>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <header class="clearfix">
+        <div class="slogan fl"><a href="index.html"><img src="images/header_logo.png" alt=""/></a></div>
+        <div class="app_download fr"><a href="javascript:;" title="手机app下载"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--搜索-->
+    <div class="search clearfix">
+        <input class="search_ip fl" type="text" placeholder="请输入你想比价的商品"/>
+        <input class="search_btn fr" type="button" value="搜索"/>
+    </div>
+    <!--比价-->
+    <div class="parity">
+        <ul class="row">
+
+        </ul>
+    </div>
+
+
+
+    <!--底部导航-->
+    <div class="btn-nav clearfix">
+        <a href="#" class="login">登录</a>
+        <a href="#" class="register">注册</a>
+        <a href="#" class="to_top">
+            <i></i>
+            回到顶部
+        </a>
+    </div>
+    <!-- 尾部-->
+    <footer>
+        <p>
+            <a href="javascript:;">手机APP下载</a>
+            <a href="index.html">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script src="lib/jquery/jquery.min.js/"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/comment/Route.js"></script>
+<script src="js/parity.js"></script>
+
+<!--分类标题-->
+<script type="text/template" id="tmp_parity_title">
+    {{ each list v}}
+    <li class="parity_item" data-id={{v.titleId}}>
+        <a class="title" href="javascript:;" >{{v.title}}</a>
+        <ul class="item_content clearfix"></ul>
+    </li>
+    {{ /each }}
+</script>
+
+<!--分类列表-->
+<script type="text/template" id="tmp_parity_list">
+    {{ each list v}}
+            <li data-id={{v._id}}><a href="parity-all.html?categoryid={{v.categoryId}}">{{v.category}}</a></li>
+    {{ /each }}
+</script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #eee;
+  height: auto;
+}
+.hide {
+  display: none;
+}
+.btn_orange a {
+  display: block;
+  width: 13.4rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  background: #FF9000;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+/*******************ͷ��********************/
+header {
+  width: 100%;
+  max-width: 750px;
+  height: 2rem;
+  background-color: #ff841d;
+}
+header .back_icon {
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+header .back_icon a {
+  display: inline-block;
+  width: 0.8rem;
+  height: 1.2rem;
+  ine-height: 1.8rem;
+  background: url(../images/back.svg) 0 0 no-repeat;
+  margin-top: 0.5rem;
+}
+header h2 {
+  height: 2rem;
+  line-height: 2rem;
+  width: 11.5rem;
+  text-align: center;
+  color: #fff;
+}
+header .slogan {
+  width: 7.42rem;
+  height: 1.1rem;
+  padding-top: 0.52rem;
+  padding-left: 0.66rem;
+}
+header .app_download {
+  width: 1.4rem;
+  height: 1.4rem;
+  padding: 0.4rem 0.3rem 0 0;
+}
+/***************������*****************/
+.search {
+  padding: 0.4rem;
+  background-color: #fff;
+}
+.search .search_ip {
+  width: 11.4rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: #eee;
+  padding-left: 0.7rem;
+}
+.search .search_btn {
+  width: 2.52rem;
+  height: 1.24rem;
+  background: #ff841d;
+  border-radius: 0.6rem;
+  border: none;
+  color: #fff;
+}
+/***************������*****************/
+.nav {
+  margin: 0.4rem 0 0.4rem 0;
+  background-color: #fff;
+}
+.nav li {
+  width: 3.7rem;
+  float: left;
+  margin: 0.6rem 0 0.3rem 0;
+}
+.nav li img {
+  width: 2.04rem;
+  height: 2.16rem;
+  margin: 0 auto;
+}
+.nav li p {
+  text-align: center;
+  line-height: 1rem;
+}
+.title_item {
+  background-color: #ff9000;
+  color: #fff;
+  font-size: 0.6rem;
+  line-height: 1.3rem;
+  height: 1.3rem;
+  padding: 0 0.4rem;
+}
+.title_item .more {
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-top: 0.3rem;
+}
+/*******************�ۿ�**********************/
+.discount {
+  background-color: #fff;
+}
+.discount .more_discount {
+  padding: 0.6rem 0.4rem;
+}
+.discount .more_discount a {
+  display: block;
+  width: 14.1rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+}
+/***************��Ʒ�б�*********************/
+.ind_goods_content {
+  background-color: #fff;
+}
+.ind_goods_content .goods li {
+  padding: 0.6rem 0.4rem;
+  border-bottom: 1px solid #eee;
+}
+.ind_goods_content .goods_img img {
+  width: 4rem;
+  height: 4rem;
+}
+.ind_goods_content .goods_info {
+  width: 10.1rem;
+}
+.ind_goods_content .goods_info .title {
+  height: 2.6rem;
+}
+.ind_goods_content .goods_info .title span {
+  color: red;
+}
+.ind_goods_content .goods_info i {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.7rem;
+  background: url(../images/tl.svg) 0 0 no-repeat;
+  vertical-align: middle;
+}
+/****************�ײ�����****************/
+.btn-nav {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  margin: 0.8rem 0 0.8rem 0;
+}
+.btn-nav a {
+  float: left;
+  width: 5rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  border-right: 1px solid #888;
+}
+.btn-nav .to_top {
+  border: none;
+}
+.btn-nav .to_top i {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url(../images/top.jpg) no-repeat 0 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/****************�ײ�*******************/
+footer {
+  font-size: 12px;
+}
+footer p {
+  text-align: center;
+}

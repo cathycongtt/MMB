@@ -1,0 +1,9 @@
+.fight_goods .filter {
+  background-color: #fff;
+}
+.fight_goods .filter li {
+  width: 5rem;
+  padding: 0.4rem 0;
+  float: left;
+  text-align: center;
+}

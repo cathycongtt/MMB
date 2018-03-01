@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>省钱控</title>
+    <link rel="stylesheet" href="css/transport.css"/>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <header class="clearfix">
+        <!--<div class="back fl"><a href="index.html"><img src="images/header_logo.png" alt=""/></a></div>-->
+        <div class="back_icon fl">
+            <a href="index.html"></a>
+        </div>
+        <h2 class="fl">省钱控—最新优惠</h2>
+        <div class="app_download fr"><a href="javascript:;" title="手机app下载"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--省钱控-->
+    <div class="thrifty">
+        <div class="ind_goods_content">
+            <ul class="goods">
+                <script type="text/template" id="tmp_moneyctrl">
+                    {{ each list v}}
+                <li class="clearfix">
+                    <a href="thrifty_details.html?productid={{v.productId}}">
+                        <div class="goods_img fl">
+                            {{@v.productImgSm}}
+                        </div>
+                        <div class="goods_info fr">
+                            <div class="title">{{v.productName}}
+                                <span>{{v.productPinkage}}</span>
+                            </div>
+                            <div class="other">
+                                <span class="fl">{{v.productFrom}} | {{v.productTime}}</span>
+                                    <span class="fr">
+                                        <i></i>
+                                        1
+                                    </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                    {{ /each }}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <!--底部导航-->
+    <div class="btn-nav clearfix">
+        <a href="#" class="login">登录</a>
+        <a href="#" class="register">注册</a>
+        <a href="#" class="to_top">
+            <i></i>
+            回到顶部
+        </a>
+    </div>
+    <!-- 尾部-->
+    <footer>
+        <p>
+            <a href="javascript:;">手机APP下载</a>
+            <a href="index.html">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script src="lib/jquery/jquery.min.js/"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/comment/Route.js"></script>
+<script src="js/comment/tools.js"></script>
+<script src="js/moneyctrl.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>比较商品列表</title>
+    <link rel="stylesheet" href="css/transport.css"/>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <header class="clearfix">
+        <div class="slogan fl"><a href="index.html"><img src="images/header_logo.png" alt=""/></a></div>
+        <div class="app_download fr"><a href="javascript:;" title="手机app下载"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--搜索-->
+    <div class="search clearfix">
+        <input class="search_ip fl" type="text" placeholder="请输入你想比价的商品"/>
+        <input class="search_btn fr" type="button" value="搜索"/>
+    </div>
+    <!--比价查询-全部分类-->
+    <div class="parity-all">
+        <div class="title">
+            <script type="text/template" id="tmp_parity_tit">
+                <a href="javascript:;">首页></a>
+                <a href="javascript:;">全部分类></a>
+                <a href="javascript:;">{{list.category}}</a>
+            </script>
+        </div>
+        <div class="content">
+            <ul>
+                <script type="text/template" id="tmp_parity_list">
+                    {{ each list v}}
+                    <li class="goods">
+                        <a href="goods.html?productid={{v.productId}}" class="clearfix">
+                            <div class="img fl">
+                                {{@v.productImg}}
+                            </div>
+                            <div class="info fr">
+                                <div class="tit">{{v.productName}}</div>
+                                <div class="price">{{v.productPrice}}</div>
+                                <div class="other">
+                                    <span>{{v.productQuote}}</span>
+                                    <span>{{v.productCom}}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    {{ /each }}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <!--底部导航-->
+    <div class="btn-nav clearfix">
+        <a href="#" class="login">登录</a>
+        <a href="#" class="register">注册</a>
+        <a href="#" class="to_top">
+            <i></i>
+            回到顶部
+        </a>
+    </div>
+    <!-- 尾部-->
+    <footer>
+        <p>
+            <a href="javascript:;">手机APP下载</a>
+            <a href="index.html">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+</div>
+<script src="lib/jquery/jquery.min.js/"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/comment/Route.js"></script>
+<script src="js/comment/tools.js"></script>
+<script src="js/parity_all.js"></script>
+
+</body>
+</html>

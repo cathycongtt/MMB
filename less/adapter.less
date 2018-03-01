@@ -1,0 +1,27 @@
+//专门用来做不同屏幕的适配。
+//把设计图分成15份，  750px = 15rem
+
+
+//320 360 375 384 400 414 424 480 540 720 750
+
+.adapter(@screenWidth:320px) {
+
+  @media (min-width: @screenWidth) {
+    html {
+      font-size: round(@screenWidth/15, 2);
+      //round第二个参数是保留几位小数点
+    }
+  }
+}
+
+.adapter(320px);
+.adapter(360px);
+.adapter(375px);
+.adapter(384px);
+.adapter(400px);
+.adapter(414px);
+.adapter(424px);
+.adapter(480px);
+.adapter(540px);
+.adapter(720px);
+.adapter(750px);
